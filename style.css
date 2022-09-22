@@ -45,6 +45,7 @@ button {
   cursor: pointer;
   border-radius:4rem;
   padding:2rem 5rem;
+  font-weight: 700;
 }
 .container{
   max-width: 130rem;
@@ -61,9 +62,11 @@ body {
   font-family: var(--myfont);
   font-size: 1.6rem;
   color: var(--gray);
-  font-weight: 500;
+  font-weight: 500;background: var(--white);
   
 }
+
+/* mobile first */
 
 /* header */
  .logo-container{
@@ -117,13 +120,10 @@ body {
 .hero-text-container{
   grid-column: span 2;
 }
-
 .hero-img-container
 .hero-left-img2,
 .hero-right-img2{
   display: none;
-
-  
 
 }
 .hero-img-container:hover{
@@ -139,7 +139,6 @@ body {
 .hero-img-container:hover
 .hero-left-img1{
   display: none;
-  
 }
 .hero-img-container:hover
 .hero-right-img2{
@@ -149,7 +148,6 @@ body {
 .hero-img-container:hover
 .hero-right-img1{
   display: none;
-  
 }
 .hero-text-container{
   text-align: center;
@@ -178,7 +176,6 @@ body {
 .download-button{
   background: var(--dark-cyan);
   color:var(--white);
-  font-weight: 700;
 }
 .download-button:hover{
   background: var(--cyan-hover);
@@ -188,7 +185,7 @@ body {
 }
 .what-button{
   background: var(--dark-violet);
-  color:var(--white);
+  color:var(--light-violet);
   display: block;
   margin: 2rem auto;
 }
@@ -335,6 +332,7 @@ h5 {
   margin-top: 4rem;
   position: relative;
   text-align: center;
+  padding-bottom: 7rem;
 
 }
 .footer-heading{
@@ -391,7 +389,8 @@ h5 {
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     text-align: start;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
   .btn3{
     border-radius: 45rem;
