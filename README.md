@@ -1,6 +1,5 @@
 # Frontend Mentor - Meet landing page solution!
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -21,44 +20,44 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/meet-landing-page-vanilla-css-logo-animation-easter-eggs-f0N4MR9dc9)
-- Live Site URL: [Live Site at Vercel](https://meet-landing-page-2.vercel.app/)
+- Live Site URL: [Live Site at github page](https://deguzman7.github.io/meet-landing-page/)
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- BEM
+- Vanilla CSS
 - Grid
 - Responsive Design
 
 ### What I learned
 
 For sure the best thing I learned in this challenge, was CSS property 'order', because using this property I was able to animate the logo on hover using the selector "~" affecting one div that was before the element hovered, in this case was the logo icon that get animated when I hover on the word "meet".
+Also learned how to use grid to switch items instead of order property which i knew already
 
 Example: 
 
-".meet {
+".logo-container {
   order: 2;
   transition: ease-out 1s;
 }
 
 /* logo hover effect */
-.meet,
-.icon {
+.meet-logo,
+.meet-icon {
   transition: ease-out 1s;
 }
 
-.meet:hover~.icon {
+.meet-logo:hover~.meet-icon {
   transform: rotate(720deg);
   filter: blur(1px);
-  transition: cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+  transition: 1s ease ;
 }
 
-.icon:hover {
+.meet-icon:hover {
   transform: rotate(-720deg);
   filter: blur(1px);
-  transition: cubic-bezier(0.65, 0.05, 0.36, 1) 1s;
+  transition: 1s ease ;
 }"
 
 ### Useful resources
@@ -67,5 +66,5 @@ Example:
 
 
 ## Author
-- Github - [correlucas](https://github.com/correlucas/)
-- Frontend Mentor - [@correlucas](https://www.frontendmentor.io/profile/correlucas)
+- Github - [deguzman7](https://github.com/deguzman7/)
+- Frontend Mentor - [@deguzman7](https://www.frontendmentor.io/profile/deguzman7)

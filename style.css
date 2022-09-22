@@ -69,22 +69,38 @@ body {
  .logo-container{
   display: flex;
   justify-content: center;
-  cursor: pointer;
   margin-top: 2rem;
 }
-.logo-container
-.meet-logo2{
-  display: none;
-}
-.logo-container:hover
-.meet-logo2{
-  display: block;
+
+.logo-container:hover {
+  filter: saturate(3);
+  cursor: pointer;
 }
 
-.logo-container:hover
-.meet-logo1{
-  display: none;
+.meet-logo {
+  order: 2;
+  transition: ease-out 1s;
 }
+
+/* logo hover effect */
+.meet-logo,
+.meet-icon {
+  transition: ease-out 1s;
+}
+
+.meet-logo:hover~.meet-icon {
+  transform: rotate(720deg);
+  filter: blur(1rem);
+  transition: 1s ease;
+}
+
+.meet-icon:hover {
+  transform: rotate(-720deg);
+  filter: blur(1rem);
+  transition: 1s ease;
+}
+
+
 
 /* hero section */
 .hero-container{
@@ -106,11 +122,13 @@ body {
 .hero-left-img2,
 .hero-right-img2{
   display: none;
+
   
 
 }
 .hero-img-container:hover{
   cursor: pointer;
+  
 }
 .hero-img-container:hover
 .hero-left-img2{
