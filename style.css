@@ -371,6 +371,7 @@ h5 {
   .footer-content{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    align-items: center;
     text-align: start;
     padding-bottom: 4rem;
   }
